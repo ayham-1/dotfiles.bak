@@ -27,4 +27,7 @@ cp -rf ~/.emacs.d/scripts/ .emacs.d/
 # Copy .Xresources configuration.
 cp ~/.Xresources .Xresources
 
+# Copy vim configuration.
+cp ~/.vimrc .vimrc
+
 # TODO: Add Auto requirements installation script.

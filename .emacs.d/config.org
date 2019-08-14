@@ -88,6 +88,14 @@ Enable Line numberings.
 (global-display-line-numbers-mode)
 #+END_SRC
 
+Store backups and temperory files in =temporary-file-directory=.
+=/tmp= on Unix. Warning: =/tmp= on most Unix-like systems is VOLATILE, IN-MEMORY storage.
+
+#+BEGIN_SRC emacs-lisp
+(setq backup-directory-alist `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms `((".*", temporary-file-directory t)))
+#+END_SRC
+
 * UI Prefrences
 ** Tweak EMACS' window
 
