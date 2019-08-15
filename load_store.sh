@@ -19,5 +19,8 @@ cp -r .emacs.d/scripts/ ~/.emacs.d/
 # Copy the .Xresources configuration files.
 cp .Xresources ~/.Xresources
 
+# Copy the zsh configuration files.
+cp .zshrc ~/.zshrc
+
 # Copy the vim configuration files.
 cp .vimrc ~/.vimrc

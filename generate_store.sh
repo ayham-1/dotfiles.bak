@@ -30,4 +30,5 @@ cp ~/.Xresources .Xresources
 # Copy vim configuration.
 cp ~/.vimrc .vimrc
 
-# TODO: Add Auto requirements installation script.
+# Copy zsh configuration.
+cp ~/.zshrc .zshrc

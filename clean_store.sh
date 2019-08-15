@@ -4,3 +4,4 @@
 rm -rf .config
 rm -rf .emacs.d
 rm -rf .Xresources
+rm -f .
