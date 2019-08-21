@@ -277,7 +277,7 @@ Use subword mode.
 Set the tab width when using C/C++ mode.
 
 #+BEGIN_SRC emacs-lisp
-  (setq-default c-basic-offset 'tab-width)
+  (setq-default c-basic-offset 4)
 #+END_SRC
 
 ** =Lisp= Environment

@@ -2,6 +2,9 @@
 
 These are the configurations and packages that I use for my setup.
 
+![EMACS Setup](example_emacs.png?raw=true "EMACS Setup")
+![i3wm Setup](example_i3wm.png?raw=true "i3wm Setup")
+
 ## Getting Started
 
 ### Prerequisities

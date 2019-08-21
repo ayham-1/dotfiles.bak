@@ -194,3 +194,7 @@ for_window [class="^.*"] border pixel 0
 # Set Caps lock as Escape
 exec_always xmodmap -e "Clear lock"
 exec_always xmodmap -e "keysym Caps_Lock = Escape"
+
+# Screen Shots
+bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
+bindsym Control+Print exec gnome-screenshot -i
