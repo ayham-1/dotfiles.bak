@@ -61,8 +61,8 @@ Feel free to add configurations/distro support. I would be more than glad to rev
 
 I am the initial author.
 
-The list of contributors can be find here:  [contributors](https://github.com/realaltffour/dotfiles/blob/master/contributors.md)
+The list of contributors can be find here:  [contributors](contributors.md)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md]https://github.com/realaltffour/dotfiles/blob/master/LICENSE.md)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md)
