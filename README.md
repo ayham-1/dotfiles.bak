@@ -3,7 +3,7 @@
 These are the configurations and packages that I use for my setup.
 
 ![EMACS Setup](example_emacs.png?raw=true "EMACS Setup")
-![i3wm Setup](example_i3wm.png?raw=true "i3wm Setup")
+![i3wm Setup](example_i3.png?raw=true "i3wm Setup")
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ If you want to install the configuration files only:
 ./load_store.sh
 ```
 
-If you want to generate the files from you current configuration:
+If you want to generate the files from your current configuration:
 
 ```
 ./generate_store.sh
