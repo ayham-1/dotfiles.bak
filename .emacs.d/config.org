@@ -186,6 +186,15 @@ Store backups and temperory files in =temporary-file-directory=.
 #+END_SRC
 
 * Packages Configuration
+** =evil-mode=
+
+Set-up =evil-mode=
+
+#+BEGIN_SRC emacs-lisp
+  (use-package evil)
+  (evil-mode t)
+#+END_SRC
+
 ** =ag=
 
 Set up =ag= on startup.
