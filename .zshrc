@@ -99,3 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 TERM=xterm-256color
+
+# Add git tab completion support.
+autoload -Uz compinit && compinit
