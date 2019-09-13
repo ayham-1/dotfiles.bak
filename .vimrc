@@ -54,6 +54,9 @@ set autoindent
 autocmd Filetype cpp setlocal expandtab tabstop=4 shiftwidth=4
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 
+" tpp as cpp.
+autocmd BufEnter *.tpp :setlocal filetype=cpp
+
 " Setup airline.
 let g:airline_powerline_fonts = 1
 
