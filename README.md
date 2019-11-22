@@ -2,70 +2,8 @@
 
 These are the configurations and packages that I use for my setup.
 
-![EMACS Setup](example_emacs.png?raw=true "EMACS Setup")
-![i3wm Setup](example_i3.png?raw=true "i3wm Setup")
+## Install
 
-## Getting Started
+Have a look at the contents and then run stow <config_dir>
 
-### Prerequisities
-
-The supported distros for automatic installation of packages:
-    - Ubuntu 19/18/16/14. (18/16/14 is not tested)
-    - Arch. (not supported, yet)
-    If you feel that I need to support other distros, feel free to make an issue.
-
-```git``` is optional.
-
-To download the files, using git:
-
-```
-git clone https://github.com/realaltffour/dotfiles.git
-```
-
-or you can download the files directly from Github.
-
-### Installing
-
-If you want to install the packages and configuration files:
-
-```
-./deploy.sh
-```
-
-If you want to install the configuration files only:
-
-```
-./load_store.sh
-```
-
-If you want to generate the files from your current configuration:
-
-```
-./generate_store.sh
-```
-
-## Packages
-   * EMACS
-   * VIM
-   * ZSH
-   * i3-wm
-   * light (for backlight control)
-   * cmake (for bulding, TODO: check need)
-   * make (for building packages)
-   * automake (for building, TODO: check need)
-   * autoreconf
-
-
-##  Contributing
-
-Feel free to add configurations/distro support. I would be more than glad to review it.
-
-## Authors
-
-I am the initial author.
-
-The list of contributors can be find here:  [contributors](contributors.md)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md)
+NOTE: MODIFY GITCONFIG BEFORE COPYING.
