@@ -77,7 +77,7 @@ set autoindent
 "set cindent
 
 " Language specific indentation.
-autocmd Filetype cpp setlocal expandtab tabstop=4 shiftwidth=4
+autocmd Filetype cpp setlocal expandtab cindent smartindent tabstop=4 shiftwidth=4
 autocmd Filetype python setlocal expandtab tabstop=8 shiftwidth=4 softtabstop=4
 
 " tpp as cpp.
