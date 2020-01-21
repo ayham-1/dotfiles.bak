@@ -18,14 +18,6 @@ Workaround for a bug in EMACS 26. Where there is an issue installing some packag
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 #+END_SRC
 
-* Load Scripts
-
-Load the typing-speed script.
-
-#+BEGIN_SRC emacs-lisp
-  (load-file (concat user-emacs-directory "scripts/typing_speed.el"))
-#+END_SRC
-  
 * UI Prefrences
 ** Tweak EMACS' window
 
@@ -186,6 +178,11 @@ Store backups and temperory files in =temporary-file-directory=.
 #+END_SRC
 
 * Packages Configuration
+** =key-chord=
+Set-up =key-chord=
+#+BEGIN_SRC emacs-lisp
+(use-package key-chord)
+#+END_SRC 
 ** =evil-mode=
 
 Set-up =evil-mode=
@@ -193,7 +190,11 @@ Set-up =evil-mode=
 #+BEGIN_SRC emacs-lisp
   (use-package evil)
   (evil-mode t)
-#+END_SRC
+  ;;Exit insert mode by pressing j and then j quickly
+  (setq key-chord-two-keys-delay 0.5)
+  (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
+  (key-chord-mode 1) 
+  #+END_SRC
 
 ** =ag=
 
@@ -324,11 +325,4 @@ Indent with 4 spaces.
 			(lambda ()
 			  (setq sh-basic-offset 4
 					sh-indentation 4)))
-#+END_SRC
-* Misc Configuration
-
-Install =speed-type= for typing practice.
-
-#+BEGIN_SRC emacs-lisp
-  (use-package speed-type)
 #+END_SRC

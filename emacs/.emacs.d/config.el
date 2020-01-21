@@ -3,8 +3,6 @@
 
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
-(load-file (concat user-emacs-directory "scripts/typing_speed.el"))
-
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -81,8 +79,14 @@
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*", temporary-file-directory t)))
 
+(use-package key-chord)
+
 (use-package evil)
 (evil-mode t)
+;;Exit insert mode by pressing j and then j quickly
+(setq key-chord-two-keys-delay 0.5)
+(key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
+(key-chord-mode 1)
 
 (use-package ag)
 
@@ -126,5 +130,3 @@
 		      (lambda ()
 			(setq sh-basic-offset 4
 				      sh-indentation 4)))
-
-(use-package speed-type)

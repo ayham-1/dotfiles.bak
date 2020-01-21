@@ -23,6 +23,7 @@ Plugin 'google/vim-glaive'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'vbe0201/vimdiscord'
 
 call vundle#end() 
 call glaive#Install()

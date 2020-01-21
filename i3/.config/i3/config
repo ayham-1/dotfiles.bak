@@ -193,8 +193,8 @@ exec_always feh --bg-fill ~/.config/i3/res/bg.jpg
 for_window [class="^.*"] border pixel 2
 
 # Set gaps
-gaps inner 15
-gaps outer 12
+gaps inner 5
+gaps outer 5
 
 # Set Caps lock as Escape
 exec_always xmodmap -e "Clear lock"
