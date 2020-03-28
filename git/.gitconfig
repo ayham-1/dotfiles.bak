@@ -1,16 +1,8 @@
 [user]
 	email = 56314286+realaltffour@users.noreply.github.com
-	name = altffour
-	signingkey = 96E22EFCFC1F2140
-[core]
-	editor = vim
-[diff]
-	tool = meld
-[difftool]
-	prompt = false
-[difftool "meld"]
-	cmd = meld \"$LOCAL\" \"$REMOTE\"
-[credential]
-	helper = cache --timeout 21600
+	name = realaltffour
+	signingkey = 05B35E2E8F56C5A6
+[gpg]
+	program = gpg2
 [commit]
-	gpgsign = true
+	gpgsign = 1
