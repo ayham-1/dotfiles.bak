@@ -183,19 +183,6 @@ Set-up =key-chord=
 #+BEGIN_SRC emacs-lisp
 (use-package key-chord)
 #+END_SRC 
-** =evil-mode=
-
-Set-up =evil-mode=
-
-#+BEGIN_SRC emacs-lisp
-  (use-package evil)
-  (evil-mode t)
-  ;;Exit insert mode by pressing j and then j quickly
-  (setq key-chord-two-keys-delay 0.5)
-  (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
-  (key-chord-mode 1) 
-  #+END_SRC
-
 ** =ag=
 
 Set up =ag= on startup.
