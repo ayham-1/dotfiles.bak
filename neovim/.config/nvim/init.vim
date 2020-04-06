@@ -4,6 +4,7 @@ Plug 'scrooloose/nerdTree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-fugitive'
+Plug 'rhysd/vim-clang-format'
 call plug#end()
 filetype plugin indent on
 
@@ -17,8 +18,10 @@ set tabstop=4
 set autoindent
 
 " Language specific Indentation
-autocmd Filetype cpp setlocal expandtab cindent smartindent tabstop=4 shiftwidth=4
-autocmd Filetype python setlocal expandtab tabstop=8 shiftwidth=4
+autocmd Filetype cpp setlocal noexpandtab cindent smartindent tabstop=4 shiftwidth=4
+autocmd Filetype c ClangFormatAutoEnable
+autocmd Filetype cpp ClangFormatAutoEnable
+autocmd Filetype python setlocal noexpandtab tabstop=8 shiftwidth=4
 
 " .tpp as cpp
 autocmd BufEnter *.tpp :setlocal filetype=cpp
