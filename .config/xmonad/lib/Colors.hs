@@ -1,0 +1,1 @@
+/home/dizzy/.cache/wal/colors.hs
