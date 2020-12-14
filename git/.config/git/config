@@ -1,8 +1,0 @@
-[user]
-	email = 56314286+realaltffour@users.noreply.github.com
-	name = realaltffour
-	signingkey = 05B35E2E8F56C5A6
-[gpg]
-	program = gpg2
-[commit]
-	gpgsign = 1
