@@ -1,0 +1,2 @@
+cp ~/.config/cdm/dwm-xinit ~/.config/X11/xinitrc
+startx ~/.config/X11/xinitrc
