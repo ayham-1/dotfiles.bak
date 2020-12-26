@@ -1,0 +1,9 @@
+#exec picom --config ~/.config/picom.conf &
+#exec xrandr --auto --output HDMI1 --mode 1024x768 --right-of eDP1 &
+#exec flameshot &
+#exec greenclip daemon &
+exec /usr/lib/kdeconnectd &
+#exec dunst &
+exec xmodmap ~/.config/Xmodmap &
+#exec xrdb -merge ~/.cache/wal/colors.Xresources &
+exec startlxde

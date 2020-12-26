@@ -10,6 +10,10 @@ export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
 
+export PATH="$HOME/.local/bin/statusbar/:$PATH"
+
+export GPG_TTY=$(tty)
+
 # ~/ clean-up
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"

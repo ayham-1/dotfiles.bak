@@ -1,10 +1,14 @@
 exec feh --no-fehbg --bg-fill ~/proj/sysconf/wallpapers/wallpaper &
+exec rm -r ~/.cache/wal &
+exec wal -i ~/proj/sysconf/wallpapers/wallpaper &
 #exec statusbar &
-exec dwmblocks &
+exec slstatus &
 exec picom --config ~/.config/picom.conf &
 exec xrandr --auto --output HDMI1 --mode 1024x768 --right-of eDP1 &
-exec flameshot &
-exec greenclip daemon &
+#exec flameshot &
+#exec greenclip daemon &
 exec /usr/lib/kdeconnectd &
-exec dunst &
-exec dwm
+#exec dunst &
+exec xmodmap ~/.config/Xmodmap &
+exec xrdb -merge ~/.cache/wal/colors.Xresources &
+exec dbus-launch dwm

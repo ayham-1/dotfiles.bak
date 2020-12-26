@@ -1,0 +1,2 @@
+cp ~/.config/cdm/lxde-xinit ~/.config/X11/xinitrc
+startx ~/.config/X11/xinitrc
