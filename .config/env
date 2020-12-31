@@ -7,6 +7,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 
 # Default Programs
 export EDITOR="nvim"
+export VISUAL="nvim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
 
@@ -47,3 +48,18 @@ export XMONAD_CACHE_HOME="$XDG_CACHE_HOME"/xmonad
 alias wget="wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
 alias irssi="irssi --config=\"$XDG_CONFIG_HOME\"/irssi/config
 --home=\"$XDG_DATA_HOME\"/irssi"
+
+
+# Useful aliases
+alias update="sudo mount /dev/sda1 /boot && sudo pacman -Syu"
+alias pman="pacman"
+alias myip="curl ipinfo.io/ip"
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -v"
+alias g="git"
+alias f="$FILE"
+alias e="$EDITOR"
+alias v="$EDITOR"
+alias ll="ls -lhA"
+alias ..="cd .."
