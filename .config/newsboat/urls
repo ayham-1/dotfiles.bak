@@ -1,0 +1,26 @@
+-----------------------
+-------NEWSFEEDS-------
+-----------------------
+https://xkcd.com/atom.xml "~XKCD"
+https://www.linuxjournal.com/news.rss
+https://itsfoss.com/feed "~ItsFOSS"
+https://archlinux.org/feeds/packages/added/x86_64 "~ArchWiki: Added Packages"
+https://archlinux.org/feeds/packages/removed/x86_64 "~ArchWiki: Removed Packages"
+
+-----------------------
+-------YOUTUBE---------
+-----------------------
+
+-----------------------
+-------REDDIT----------
+-----------------------
+https://www.reddit.com/r/linux.rss "~REDDIT: r/linux"
+https://www.reddit.com/r/archlinux.rss "~REDDIT: r/archlinux"
+https://www.reddit.com/r/Gentoo.rss "~REDDIT: r/gentoo"
+https://www.reddit.com/r/debian.rss "~REDDIT: r/debian"
+https://www.reddit.com/r/freebsd.rss "~REDDIT: r/freebsd"
+
+-----------------------
+-------GIT-REPOS-------
+-----------------------
+
