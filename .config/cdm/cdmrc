@@ -9,8 +9,9 @@
 #
 # (An example:)
 binlist=(
-  '~/.config/cdm/dwm-cdm'       # Launch dwm,
-  '~/.config/cdm/lxde-cdm'      # Launch lxde desktop,
+  #'~/.config/cdm/dwm-cdm'       # Launch dwm,
+  'startx ~/.config/cdm/dwm-xinit'       # Launch dwm,
+  'startx ~/.config/cdm/lxde-xinit'      # Launch lxde desktop,
   '/bin/bash --login'	        # Execute your Shell,
   'reboot'		                # Reboot
   'shutdown 0'		            # Shutdown
