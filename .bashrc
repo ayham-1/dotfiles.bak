@@ -25,6 +25,4 @@ esac
 
 #export PS1="\[\033[38;5;6m\][\[$(tput sgr0)\]\[\033[38;5;83m\]\u\[$(tput sgr0)\]\[\033[38;5;77m\]@\[$(tput sgr0)\]\[\033[38;5;112m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;42m\]\W\[$(tput sgr0)\]\[\033[38;5;6m\]]\[$(tput sgr0)\]\[\033[38;5;81m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
 
-export PATH="/home/dizzy/.local/bin:$PATH"
-alias config='/usr/bin/git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
-exec fish
+source ~/.config/env

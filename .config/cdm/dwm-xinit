@@ -11,4 +11,5 @@ exec /usr/lib/kdeconnectd &
 #exec dunst &
 exec xmodmap ~/.config/Xmodmap &
 exec xrdb -merge ~/.cache/wal/colors.Xresources &
+exec source ~/.config/env &
 exec dbus-launch dwm

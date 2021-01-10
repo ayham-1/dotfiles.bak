@@ -3,8 +3,6 @@ reload-threads 100
 
 cache-file "~/.config/newsboat/cache.db"
 
-macro i set browser "feh %u"; open-in-browser ; set browser "lynx %u"
-
 # unbind keys
 unbind-key j
 unbind-key k

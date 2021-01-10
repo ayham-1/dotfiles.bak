@@ -6,6 +6,9 @@ https://www.linuxjournal.com/news.rss
 https://itsfoss.com/feed "~ItsFOSS"
 https://archlinux.org/feeds/packages/added/x86_64 "~ArchWiki: Added Packages"
 https://archlinux.org/feeds/packages/removed/x86_64 "~ArchWiki: Removed Packages"
+https://opensource.org/news.xml "~Opensource News"
+https://security.archlinux.org/ "~ArchLinux Security Issues"
+https://www.welivesecurity.com/feed "~WeLiveSecurity RSS"
 
 -----------------------
 -------YOUTUBE---------
@@ -19,8 +22,13 @@ https://www.reddit.com/r/archlinux.rss "~REDDIT: r/archlinux"
 https://www.reddit.com/r/Gentoo.rss "~REDDIT: r/gentoo"
 https://www.reddit.com/r/debian.rss "~REDDIT: r/debian"
 https://www.reddit.com/r/freebsd.rss "~REDDIT: r/freebsd"
+https://www.reddit.com/r/privacy.rss "~REDDIT: r/privacy"
+https://www.reddit.com/r/privacytoolsIO.rss "~REDDIT: r/privacytoolsIO"
+https://www.reddit.com/r/encryption.rss "~REDDIT: r/encryption"
+https://www.reddit.com/r/GnuPG.rss "~REDDIT: r/GnuPG"
+https://www.reddit.com/r/rss.rss "~REDDIT: r/rss"
 
 -----------------------
 -------GIT-REPOS-------
 -----------------------
-
+https://lkml.org/rss.php "~Linux Kernel Mailing Lists"

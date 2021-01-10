@@ -12,6 +12,7 @@ binlist=(
   #'~/.config/cdm/dwm-cdm'       # Launch dwm,
   'startx ~/.config/cdm/dwm-xinit'       # Launch dwm,
   'startx ~/.config/cdm/lxde-xinit'      # Launch lxde desktop,
+  'startx ~/.config/cdm/mate-xinit'      # Launch mate desktop,
   '/bin/bash --login'	        # Execute your Shell,
   'reboot'		                # Reboot
   'shutdown 0'		            # Shutdown
@@ -21,14 +22,14 @@ binlist=(
 # Names with whitespaces should be quoted or escaped.
 #
 # (Continued example:)
-namelist=('dwm' 'LXDE' 'Console' 'Reboot' 'Shutdown')
+namelist=('dwm' 'LXDE' 'MATE' 'Console' 'Reboot' 'Shutdown')
 
 # Type of the programs, one-by-one matched with $binlist.
 # `C' for *C*onsole programs, which would be `exec'ed.
 # `X' for *X* programs, which would be run with cdm-xlaunch(1).
 #
 # (Continued example:)
-flaglist=(C C C C C)
+flaglist=(C C C C C C)
 
 # Style for the cdm dialog, which is printed with dialog(1).
 # Default to unset, causing dialog(1) to use the system wide default.
