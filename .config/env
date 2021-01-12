@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -o vi
-
 # Default stuff
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -52,6 +50,7 @@ export XMONAD_CACHE_HOME="$XDG_CACHE_HOME"/xmonad
 alias wget="wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
 alias irssi="irssi --config=\"$XDG_CONFIG_HOME\"/irssi/config
 --home=\"$XDG_DATA_HOME\"/irssi"
+alias lynx="lynx -cfg=$XDG_CONFIG_HOME/lynx/lynx.cfg"
 
 # Useful aliases
 alias config='/usr/bin/git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
