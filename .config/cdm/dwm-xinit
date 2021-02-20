@@ -1,6 +1,5 @@
 exec feh --no-fehbg --bg-fill ~/proj/sysconf/wallpapers/wallpaper &
-exec rm -r ~/.cache/wal &
-exec wal -i ~/proj/sysconf/wallpapers/wallpaper &
+exec rm ~/.cache/wal/ &
 #exec statusbar &
 exec slstatus &
 exec picom --config ~/.config/picom.conf &
@@ -10,6 +9,7 @@ exec xrandr --auto --output HDMI1 --mode 1024x768 --right-of eDP1 &
 exec /usr/lib/kdeconnectd &
 #exec dunst &
 exec xmodmap ~/.config/Xmodmap &
-exec xrdb -merge ~/.cache/wal/colors.Xresources &
+exec xrdb ~/.cache/wal/colors.Xresources &
 exec source ~/.config/env &
+exec xscreensaver -no-splash &
 exec dbus-launch dwm

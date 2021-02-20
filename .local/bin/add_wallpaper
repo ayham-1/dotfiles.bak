@@ -1,0 +1,34 @@
+#!/bin/sh
+
+wallpaper_link=$(xclip -o -sel clipboard)
+notify-send "Downloading wallpaper..."
+curl $wallpaper_link > /tmp/waly
+notify-send "Finished downloading..."
+
+wal_name=(dmenu -p "Name the wallpaper: ")
+
+# Find wallpaper last ID
+wal_ids=$(ls $HOME/pix/wallpapers/)
+max=000
+
+for i in $wal_ids 
+do 
+	id=$(echo $i | awk 'BEGIN {FS="-"} ; {print $1}')
+	if [ $(echo "$id > $max" | bc) = "1" ] 
+	then
+	 	max=$id
+	fi
+done
+
+# Gen wallpaper new ID
+new_wal_id=$(echo "$max+1" | bc)
+new_wal_id=$(printf %03d $new_wal_id)
+
+# Get name of new wallpaper
+title=$(echo "$wallpaper_link" | dmenu -p "Name of Wallpaper: $new_wal_id-")
+[ -z $title ] && exit
+
+# Generate final location and move
+final_wal_loc=$HOME/pix/wallpapers/$new_wal_id-$title
+mv /tmp/waly $final_wal_loc
+notify-send "Added wallpaper to collection"

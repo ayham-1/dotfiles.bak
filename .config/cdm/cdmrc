@@ -11,7 +11,7 @@
 binlist=(
   #'~/.config/cdm/dwm-cdm'       # Launch dwm,
   'startx ~/.config/cdm/dwm-xinit'       # Launch dwm,
-  'startx ~/.config/cdm/lxde-xinit'      # Launch lxde desktop,
+  'startx ~/.config/cdm/gnome-cdm'      # Launch guh-nome desktop,
   'startx ~/.config/cdm/mate-xinit'      # Launch mate desktop,
   '/bin/bash --login'	        # Execute your Shell,
   'reboot'		                # Reboot
@@ -22,7 +22,7 @@ binlist=(
 # Names with whitespaces should be quoted or escaped.
 #
 # (Continued example:)
-namelist=('dwm' 'LXDE' 'MATE' 'Console' 'Reboot' 'Shutdown')
+namelist=('dwm' 'gnome' 'MATE' 'Console' 'Reboot' 'Shutdown')
 
 # Type of the programs, one-by-one matched with $binlist.
 # `C' for *C*onsole programs, which would be `exec'ed.

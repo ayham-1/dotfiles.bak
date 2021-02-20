@@ -1,16 +1,43 @@
+# -- feeds
 auto-reload yes
-reload-threads 100
-
+reload-threads 4
+download-retries 4
+download-timeout 10
 cache-file "~/.config/newsboat/cache.db"
 
-# unbind keys
-unbind-key j
-unbind-key k
-unbind-key J
-unbind-key K
+# -- display
+text-width 80
 
-# bind keys - vim style
-bind-key j down
-bind-key k up
-bind-key l open
-bind-key h quit
+# -- navigation
+goto-next-feed no
+
+browser "lynx -nocolor"
+bind-key j down feedlist
+bind-key k up feedlist
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key j down article
+bind-key k up article
+
+# -- macros
+macro m set browser "mpv --ytdl %u --profile=360p > /dev/null &"; open-in-browser ; set browser "lynx -nocolor"
+macro a set browser "echo %u | xclip -sel clip"; open-in-browser ; set browser "lynx -nocolor"
+
+# -- podboat
+delete-played-files no
+download-path "~/dox/pod/%h/%n"
+max-downloads 4
+player "play"
+
+# -- color
+color listfocus           white   black   bold
+color listfocus_unread    white   black   bold
+color info                white   black   bold
+#color article             white   black
+
+# -- misc
+unbind-key C feedlist
+confirm-exit no
+cleanup-on-quit no

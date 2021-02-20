@@ -24,5 +24,8 @@ esac
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
 #export PS1="\[\033[38;5;6m\][\[$(tput sgr0)\]\[\033[38;5;83m\]\u\[$(tput sgr0)\]\[\033[38;5;77m\]@\[$(tput sgr0)\]\[\033[38;5;112m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;42m\]\W\[$(tput sgr0)\]\[\033[38;5;6m\]]\[$(tput sgr0)\]\[\033[38;5;81m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
+export PS1="[\W] \\$ "
+set -o vi
 
 source ~/.config/env
+source "/home/dizzy/.local/share/cargo/env"

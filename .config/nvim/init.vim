@@ -12,6 +12,10 @@ Plug 'tpope/vim-sleuth'
 Plug 'editorconfig/editorconfig'
 Plug 'airblade/vim-gitgutter'
 Plug 'preservim/nerdcommenter'
+Plug 'Vimjas/vim-python-pep8-indent'
+" Debugging plugins
+Plug 'realaltffour/comprog.nvim', { 'branch': 'test' }
+"Plug '~/.config/nvim/plugged/comprog.nvim'
 call plug#end()
 filetype plugin indent on
 

@@ -1,147 +1,96 @@
 [global]
-    ### Display ###
+font = Iosevka Term 9
 
-    # Which monitor should the notifications be displayed on.
-    monitor = 0
+markup = yes
+plain_text = no
+format = "<b>%s</b>\n%b"
 
-    follow = mouse
+sort = no
 
-    geometry = "300x5-30+20"
+indicate_hidden = yes
 
-    indicate_hidden = yes
+alignment = center
 
-    shrink = no
+bounce_freq = 0
 
-    transparency = 0
+show_age_threshold = -1
 
-    notification_height = 0
+word_wrap = yes
 
-    separator_height = 2
+ignore_newline = no
 
-    padding = 8
+stack_duplicates = yes
+hide_duplicate_count = yes
 
-    horizontal_padding = 8
+geometry = "300x20-15+20"
 
-    frame_width = 3
+shrink = no
 
-    frame_color = "{color4}"
+transparency = 5
 
-    separator_color = frame
+idle_threshold = 0
 
-    sort = yes
+monitor = 0
 
-    idle_threshold = 120
+follow = none
 
-    ### Text ###
+sticky_history = yes
 
-    font = Monospace 8
+history_length = 15
 
-    line_height = 0
+show_indicators = no
 
-    markup = full
+line_height = 0
 
-    format = "<b>%s</b>\n%b"
+separator_height = 2
 
-    alignment = left
+padding = 0
 
-    vertical_alignment = center
+horizontal_padding = 0
 
-    show_age_threshold = 60
+separator_color = frame
 
-    word_wrap = yes
+startup_notification = false
 
-    ellipsize = middle
+dmenu = /usr/bin/dmenu -p dunst:
 
-    ignore_newline = no
+browser = /usr/bin/firefox -new-tab
 
-    stack_duplicates = true
+icon_position = off
+max_icon_size = 80
 
-    hide_duplicate_count = false
+icon_path = /usr/share/icons/Paper/16x16/mimetypes/:/usr/share/icons/Paper/48x48/status/:/usr/share/icons/Paper/16x16/devices/:/usr/share/icons/Paper/48x48/notifications/:/usr/share/icons/Paper/48x48/emblems/
 
-    show_indicators = yes
-
-    icon_position = left
-
-    min_icon_size = 0
-
-    max_icon_size = 32
-
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-
-    sticky_history = yes
-
-    history_length = 20
-
-    dmenu = /usr/bin/dmenu -p dunst:
-
-    browser = /usr/bin/firefox -new-tab
-
-    always_run_script = true
-
-    title = Dunst
-
-    class = Dunst
-
-    startup_notification = false
-
-    verbosity = mesg
-
-    corner_radius = 0
-
-    ignore_dbusclose = false
-
-    force_xinerama = false
-
-    mouse_left_click = close_current
-    mouse_middle_click = do_action, close_current
-    mouse_right_click = close_all
-
-[experimental]
-    per_monitor_dpi = false
+frame_width = 1
+frame_color = "#000000"
 
 [shortcuts]
 
-    # Shortcuts are specified as [modifier+][modifier+]...key
-    # Available modifiers are "ctrl", "mod1" (the alt-key), "mod2",
-    # "mod3" and "mod4" (windows-key).
-    # Xev might be helpful to find names for keys.
 
-    # Close notification.
-    close = ctrl+space
+close = ctrl+space
 
-    # Close all notifications.
-    close_all = ctrl+shift+space
+close_all = ctrl+shift+space
 
-    # Redisplay last message(s).
-    # On the US keyboard layout "grave" is normally above TAB and left
-    # of "1". Make sure this key actually exists on your keyboard layout,
-    # e.g. check output of 'xmodmap -pke'
-    history = ctrl+grave
+history = ctrl+grave
 
-    # Context menu.
-    context = ctrl+shift+period
+context = ctrl+shift+period
+
+frame_color = "{color1}"
 
 [urgency_low]
-    # IMPORTANT: colors have to be defined in quotation marks.
-    # Otherwise the "#" and following would be interpreted as a comment.
-    background = "{background}"
-    foreground = "{foreground}"
-    timeout = 10
-    # Icon for notifications with low urgency, uncomment to enable
-    #icon = /path/to/icon
+foreground = "{foreground}"
+background = "{background}"
+timeout = 4
 
 [urgency_normal]
-    background = "{background}"
-    foreground = "{foreground}"
-    timeout = 10
-    # Icon for notifications with normal urgency, uncomment to enable
-    #icon = /path/to/icon
+foreground = "{foreground}"
+background = "{background}"
+timeout = 6
 
 [urgency_critical]
-    background = "{background}"
-    foreground = "{foreground}"
-    frame_color = "{color4}"
-    timeout = 0
-    # Icon for notifications with critical urgency, uncomment to enable
-    #icon = /path/to/icon
+foreground = "{foreground}"
+background = "{background}"
+timeout = 8
+
+
 # vim: ft=cfg

@@ -4,6 +4,7 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_BIN_HOME="$HOME/.local/bin"
 
 # Default Programs
 export EDITOR="nvim"
@@ -12,6 +13,7 @@ export TERMINAL="alacritty"
 export BROWSER="firefox"
 
 export PATH="$XDG_DATA_HOME/gem/bin:$PATH"
+export PATH="$XDG_BIN_HOME:$PATH"
 
 export GPG_TTY=$(tty)
 

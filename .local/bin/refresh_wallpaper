@@ -1,0 +1,10 @@
+#!/bin/sh
+
+pkill -9 feh
+feh --no-fehbg --bg-fill ~/proj/sysconf/wallpapers/wallpaper
+rm -r ~/.cache/wal/
+wal -i ~/proj/sysconf/wallpapers/wallpaper
+xrdb ~/.cache/wal/colors.Xresources
+
+cp ~/.cache/wal/dunstrc ~/.config/dunst/dunstrc
+pkill -9 dunst

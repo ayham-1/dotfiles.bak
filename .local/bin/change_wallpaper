@@ -1,0 +1,6 @@
+#!/bin/sh
+
+removed=$HOME/pix/wallpapers/
+wal_name=$(find $HOME/pix/wallpapers/ -type f | awk 'BEGIN {FS="/"} ; {print $6}' | dmenu -i -l 25)
+cp -f $removed/$wal_name ~/pix/wallpapers/wallpaper
+refresh_wallpaper
