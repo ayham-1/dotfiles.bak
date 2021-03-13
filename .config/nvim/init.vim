@@ -21,18 +21,29 @@ filetype plugin indent on
 
 " Setup theme.
 set t_Co=256
-colorscheme wal
+"colorscheme wal
 let g:airline_themes='onedark'
 
-" Setup Global Settings
+" General
 set textwidth=80
 let mapleader = " "
-set nowrap
 set clipboard+=unnamed
+set autoread
+set backspace=indent,eol,start
+set ignorecase
+set smartcase
+set incsearch
+set magic
 
-
-" Plugin Settings
-autocmd FileType cpp nnoremap <leader>fw :CompileAndRun<CR>
+" Appearance
+set number
+set nowrap
+set showbreak=↪
+ " toggle invisible characters
+set list
+set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮,space:·
+set list
+set ttyfast
 
 " Leader keys
 map <leader>e :bufdo e!<CR>
@@ -40,7 +51,6 @@ nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
 " Custom settings.
 set mouse=a
-set number
 set encoding=utf-8
 set backspace=indent,eol,start
 set timeoutlen=50

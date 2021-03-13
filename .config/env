@@ -13,6 +13,7 @@ export TERMINAL="alacritty"
 export BROWSER="firefox"
 
 export PATH="$XDG_DATA_HOME/gem/bin:$PATH"
+export PATH="/usr/games/:$PATH"
 export PATH="$XDG_BIN_HOME:$PATH"
 
 export GPG_TTY=$(tty)
@@ -58,6 +59,7 @@ alias lynx="lynx -cfg=$XDG_CONFIG_HOME/lynx/lynx.cfg"
 alias config='/usr/bin/git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
 alias update="sudo mount /dev/sda1 /boot && sudo pacman -Syu"
 alias pman="pacman"
+alias cleanup_packages='(set -x; sudo pacman -R $(pacman -Qdtq))'
 alias myip="curl ipinfo.io/ip"
 alias cp="cp -iv"
 alias mv="mv -iv"

@@ -24,12 +24,13 @@ bind-key k up article
 # -- macros
 macro m set browser "mpv --ytdl %u --profile=360p > /dev/null &"; open-in-browser ; set browser "lynx -nocolor"
 macro a set browser "echo %u | xclip -sel clip"; open-in-browser ; set browser "lynx -nocolor"
+macro v set browser "curl %u | feh - &"; open-in-browser ; set browser "lynx -nocolor"
 
 # -- podboat
 delete-played-files no
 download-path "~/dox/pod/%h/%n"
 max-downloads 4
-player "play"
+player "nvlc"
 
 # -- color
 color listfocus           white   black   bold

@@ -28,4 +28,3 @@ export PS1="[\W] \\$ "
 set -o vi
 
 source ~/.config/env
-source "/home/dizzy/.local/share/cargo/env"
