@@ -1,4 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
-let g:netrw_dirhist_2='/home/dizzy/proj/PaperTrader/src/libtrader/common/misc'
-let g:netrw_dirhist_1='/home/dizzy/proj/sysconf'
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/data/sisyphus/proj/PaperTrader/src/libtrader/server/network'
+let g:netrw_dirhist_7='/data/sisyphus/proj/PaperTrader/src/libtrader/server'
+let g:netrw_dirhist_6='/data/sisyphus/proj/PaperTrader/src/libtrader/server/account'
+let g:netrw_dirhist_5='/data/sisyphus/proj/PaperTrader/src/libtrader/server'
+let g:netrw_dirhist_4='/data/sisyphus/proj/PaperTrader/src/libtrader/server/db'
+let g:netrw_dirhist_3='/data/sisyphus/proj/PaperTrader/src/libtrader/server'
+let g:netrw_dirhist_2='/data/sisyphus/proj/PaperTrader/src/libtrader/server/ds'
+let g:netrw_dirhist_1='/data/sisyphus/proj/PaperTrader/src/libtrader/server'
+let g:netrw_dirhist_0='/data/sisyphus/proj/PaperTrader/src/libtrader/common/message'
+let g:netrw_dirhist_9='/data/sisyphus/proj/PaperTrader/src/libtrader/common'

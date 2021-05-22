@@ -6,8 +6,8 @@
 
 [[ $DISPLAY ]] && shopt -s checkwinsize
 
-(cat ~/.cache/wal/sequences &)
-. ~/.cache/wal/colors.sh
+#(cat ~/.cache/wal/sequences &)
+#. ~/.cache/wal/colors.sh
 
 PS1='[\u@\h \W]\$ '
 
@@ -25,6 +25,6 @@ esac
 
 #export PS1="\[\033[38;5;6m\][\[$(tput sgr0)\]\[\033[38;5;83m\]\u\[$(tput sgr0)\]\[\033[38;5;77m\]@\[$(tput sgr0)\]\[\033[38;5;112m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;42m\]\W\[$(tput sgr0)\]\[\033[38;5;6m\]]\[$(tput sgr0)\]\[\033[38;5;81m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
 export PS1="[\W] \\$ "
-set -o vi
 
+. ~/.local/bin/z.sh
 source ~/.config/env

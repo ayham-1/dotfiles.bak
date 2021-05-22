@@ -1,28 +1,21 @@
 call plug#begin()
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'bling/vim-airline'
 Plug 'vimwiki/vimwiki'
-Plug 'dylanaraps/wal.vim'
 Plug 'mhinz/vim-startify'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'liuchengxu/vim-which-key'
-Plug 'mizlan/vim-and-cp'
 Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-sleuth'
-Plug 'editorconfig/editorconfig'
-Plug 'airblade/vim-gitgutter'
-Plug 'preservim/nerdcommenter'
-Plug 'Vimjas/vim-python-pep8-indent'
-" Debugging plugins
-Plug 'realaltffour/comprog.nvim', { 'branch': 'test' }
-"Plug '~/.config/nvim/plugged/comprog.nvim'
+
+" Telescope
+"Plug 'nvim-lua/popup.nvim'
+"Plug 'nvim-lua/plenary.nvim'
+"Plug 'nvim-telescope/telescope.nvim'
+"Plug 'nvim-telescope/telescope-fzy-native.nvim'
+
 call plug#end()
 filetype plugin indent on
 
 " Setup theme.
 set t_Co=256
 "colorscheme wal
-let g:airline_themes='onedark'
 
 " General
 set textwidth=80
@@ -41,7 +34,7 @@ set nowrap
 set showbreak=↪
  " toggle invisible characters
 set list
-set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮,space:·
+"set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮,space:·
 set list
 set ttyfast
 

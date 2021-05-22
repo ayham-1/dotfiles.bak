@@ -22,9 +22,9 @@ bind-key j down article
 bind-key k up article
 
 # -- macros
-macro m set browser "mpv --ytdl %u --profile=360p > /dev/null &"; open-in-browser ; set browser "lynx -nocolor"
+macro m set browser "mpv %u > /dev/null &"; open-in-browser ; set browser "lynx -nocolor"
 macro a set browser "echo %u | xclip -sel clip"; open-in-browser ; set browser "lynx -nocolor"
-macro v set browser "curl %u | feh - &"; open-in-browser ; set browser "lynx -nocolor"
+macro v set browser "curl %u > /tmp/img && sxiv /tmp/img && rm /tmp/img &"; open-in-browser ; set browser "lynx -nocolor"
 
 # -- podboat
 delete-played-files no
@@ -33,9 +33,9 @@ max-downloads 4
 player "nvlc"
 
 # -- color
-color listfocus           white   black   bold
-color listfocus_unread    white   black   bold
-color info                white   black   bold
+#color listfocus           white   black   bold
+#color listfocus_unread    white   black   bold
+#color info                white   black   bold
 #color article             white   black
 
 # -- misc

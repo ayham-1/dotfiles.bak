@@ -1,15 +1,37 @@
-exec feh --no-fehbg --bg-fill ~/proj/sysconf/wallpapers/wallpaper &
-exec rm ~/.cache/wal/ &
+exec feh --no-fehbg --bg-fill ~/pix/wallpapers/wallpaper &
+#exef feh --no-fehbg --bg-color black "$@" &
+#exec rm ~/.cache/wal/ &
 #exec statusbar &
 exec slstatus &
-exec picom --config ~/.config/picom.conf &
+#exec picom --config ~/.config/picom.conf &
 exec xrandr --auto --output HDMI1 --mode 1024x768 --right-of eDP1 &
+exec xcompmgr &
 #exec flameshot &
 #exec greenclip daemon &
-exec /usr/lib/kdeconnectd &
+#exec /usr/lib/kdeconnectd &
 #exec dunst &
 exec xmodmap ~/.config/Xmodmap &
-exec xrdb ~/.cache/wal/colors.Xresources &
-exec source ~/.config/env &
-exec xscreensaver -no-splash &
-exec dbus-launch dwm
+#exec xrdb ~/.cache/wal/colors.Xresources &
+source ~/.config/env &
+exec xss-lock -- /usr/bin/slock &
+exec keynav &
+umask 002 &
+if test -f /usr/lib/ssh/x11-ssh-askpass
+then
+	SSH_ASKPASS=/usr/lib/ssh/x11-ssh-askpass ssh-add < /dev/null
+fi &
+# relaunch DWM if the binary changes, otherwise bail
+csum=""
+new_csum=$(sha1sum $(which dwm))
+while true
+do
+    if [ "$csum" != "$new_csum" ]
+    then
+        csum=$new_csum
+        dbus-launch dwm
+    else
+        exit 0
+    fi
+    new_csum=$(sha1sum $(which dwm))
+    sleep 0.5
+done
