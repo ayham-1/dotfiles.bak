@@ -1,4 +1,4 @@
-## Youtube
+# Youtube
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA mental-outlaw
 https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA brodie-robertson
@@ -12,18 +12,30 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCL_f53ZEJxp8TtlOkHwMV9Q jor
 https://www.youtube.com/feeds/videos.xml?channel_id=UCDETFHKteb-C_EaXmRKvP4w sisyphus
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg distrotube
 
-## Blogs
+# News
+http://rss.slashdot.org/Slashdot/slashdotMain/?format=xml tech news misc
 
-https://xkcd.com/rss.xml webcomic
+# Fake news
+https://www.theonion.com/rss theonion fake-news
+
+# Blogs
+
 https://unixsheikh.com/feed.rss unixshekh
 https://drewdevault.com/blog/index.xml drewdevault
+http://feeds.feedburner.com/LinuxHatersBlog/?format=xml linux-hatred-deserverd-joke-i-love-linux
 
-## Podcast
+# Comics
+https://www.jspowerhour.com/comics.rss webcomic
+https://xkcd.com/rss.xml webcomic
+https://www.threewordphrase.com/rss.xml webcomic
+https://feeds.feedburner.com/Explosm/?format=xml webcomic
+
+# Podcasts
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCzQUP1qoWDoEbmsQxvdjxgQ joe-rogan
 https://anchor.fm/s/149fd51c/podcast/rss TechOverTea
 
-## Luke smith chad
+# Luke smith chad
 
 https://lukesmith.xyz/rss.xml luke-smith blog
 https://lukesmith.xyz/videos luke-smith videos
