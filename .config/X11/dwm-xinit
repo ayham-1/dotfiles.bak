@@ -1,17 +1,16 @@
-exec feh --no-fehbg --bg-fill ~/pix/wallpapers/wallpaper &
-#exef feh --no-fehbg --bg-color black "$@" &
-#exec rm ~/.cache/wal/ &
-#exec statusbar &
+exec rm ~/.cache/wal/ &
+exec wal -i ~/pix/wallpapers/wallpaper &
+#exec feh --no-fehbg --bg-fill ~/pix/wallpapers/wallpaper &
+exec xrdb ~/.cache/wal/colors.Xresources &
 exec slstatus &
-#exec picom --config ~/.config/picom.conf &
+exec picom -CG --config ~/.config/picom.conf &
 exec xrandr --auto --output HDMI1 --mode 1024x768 --right-of eDP1 &
-exec xcompmgr &
 #exec flameshot &
 #exec greenclip daemon &
 #exec /usr/lib/kdeconnectd &
-#exec dunst &
+#exec dunst
 exec xmodmap ~/.config/Xmodmap &
-#exec xrdb ~/.cache/wal/colors.Xresources &
+exec mpd &
 source ~/.config/env &
 exec xss-lock -- /usr/bin/slock &
 exec keynav &

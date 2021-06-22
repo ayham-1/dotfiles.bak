@@ -11,7 +11,7 @@ text-width 80
 # -- navigation
 goto-next-feed no
 
-browser "lynx -nocolor"
+browser "librewolf -nocolor"
 bind-key j down feedlist
 bind-key k up feedlist
 bind-key j next articlelist
@@ -22,15 +22,15 @@ bind-key j down article
 bind-key k up article
 
 # -- macros
-macro m set browser "mpv %u > /dev/null &"; open-in-browser ; set browser "lynx -nocolor"
-macro a set browser "echo %u | xclip -sel clip"; open-in-browser ; set browser "lynx -nocolor"
+macro m set browser "mpv %u > /dev/null &"; open-in-browser ; set browser "librewolf -nocolor"
+macro a set browser "echo %u | xclip -sel clip"; open-in-browser ; set browser "librewolf -nocolor"
 macro v set browser "curl %u > /tmp/img && sxiv /tmp/img && rm /tmp/img &"; open-in-browser ; set browser "lynx -nocolor"
 
 # -- podboat
 delete-played-files no
 download-path "~/dox/pod/%h/%n"
 max-downloads 4
-player "nvlc"
+player "mp3blaster"
 
 # -- color
 #color listfocus           white   black   bold

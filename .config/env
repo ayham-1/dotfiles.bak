@@ -48,6 +48,7 @@ export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export XMONAD_CONFIG_HOME="$XDG_CONFIG_HOME"/xmonad
 export XMONAD_DATA_HOME="$XDG_DATA_HOME"/xmonad
 export XMONAD_CACHE_HOME="$XDG_CACHE_HOME"/xmonad
+export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
 
 # ~/ alias clean-ups
 alias wget="wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""

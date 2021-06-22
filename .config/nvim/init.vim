@@ -1,9 +1,10 @@
 call plug#begin()
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'mhinz/vim-startify'
 Plug 'liuchengxu/vim-which-key'
 Plug 'jiangmiao/auto-pairs'
+Plug 'brainfucksec/wal.vim'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
@@ -30,13 +31,16 @@ filetype plugin indent on
 " Setup lua
 lua require("altffour")
 
-
 " Setup theme.
 set t_Co=256
-hi Pmenu ctermbg=white
-hi PmenuSel ctermbg=gray
-hi PmenuSbar ctermbg=black
-hi PmenuThumb ctermbg=black
+let g:gruvbox_contrast_light="hard"
+"let g:gruvbox_termcolors=16
+set background=light
+colorscheme wal
+"hi Pmenu ctermbg=gray
+"hi PmenuSel ctermbg=white
+"hi PmenuSbar ctermbg=black
+"hi PmenuThumb ctermbg=black
 
 " General
 set textwidth=80
@@ -70,8 +74,11 @@ set ttyfast
 let mapleader = " "
 map <leader>e :bufdo e!<CR>
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
-nnoremap <Leader>+ :vertical resize +5<CR>
-nnoremap <Leader>- :vertical resize -5<CR>
+" Telescope
+nnoremap <leader>ff :Telescope find_files<cr>
+nnoremap <leader>fg :Telescope live_grep<cr>
+nnoremap <leader>fb :Telescope buffers<cr>
+nnoremap <leader>fh :Telescope help_tags<cr>
 
 " Custom settings.
 set mouse=a
