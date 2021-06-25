@@ -1,4 +1,6 @@
-# Youtube-Tech
+"-----------------"
+"---- Youtube-Tech"
+"-----------------"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA mental-outlaw
 https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA brodie-robertson
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw the-primeagen
@@ -7,42 +9,64 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC0ZTPkdxlAKf-V33tqXwi3Q hac
 https://www.youtube.com/feeds/videos.xml?channel_id=UCDETFHKteb-C_EaXmRKvP4w sisyphus
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg distrotube
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfp-lNJy4QkIGnaEE6NtDSg Terminalforlife
+https://www.youtube.com/feeds/videos.xml?channel_id=UCCIHOP7e271SIumQgyl6XBQ oldtechbloke
 
-# Youtube-Politics
+"-----------------"
+"---- Youtube-Politics"
+"-----------------"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCIveFvW-ARp_B_RckhweNJw steven-crowder right conservative
 https://www.youtube.com/feeds/videos.xml?channel_id=UCL_f53ZEJxp8TtlOkHwMV9Q jordan-peterson philosphy enlightment
 https://www.youtube.com/feeds/videos.xml?channel_id=UCoryWpk4QVYKFCJul9KBdyw switched-to-linux politics conservative
+https://www.youtube.com/feeds/videos.xml?channel_id=UCwUizOU8pPWXdXNniXypQEQ awakenjp satire far-right
 
-# Youtube-Food
+"-----------------"
+"---- Youtube-Food"
+"-----------------"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9_p50tH3WmMslWRWKnM7dQ adam-ragusea
+https://www.youtube.com/feeds/videos.xml?channel_id=UCuM3xKQ_D0RIMMSUh9AYxNA way-of-ramen
+https://www.youtube.com/feeds/videos.xml?channel_id=UCj4KP216972cPp2w_BAHy8g wilderness-cooking
 
-# Youtube-Finance
+"-----------------"
+"---- Youtube-Finance"
+"-----------------"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCFQMnBA3CS502aghlcr0_aw coffeezilla
 https://www.youtube.com/feeds/videos.xml?channel_id=UCFCEuCsyWP0YkP3CZ3Mr01Q the-plain-bagel
 
-# Fake news
+"-----------------"
+"---- Youtube-Doomsday-Stuff"
+"-----------------"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCAL3JXZSzSm8AlZyD3nQdBA primitive-technology
+
+"-----------------"
+"---- Fake News"
+"-----------------"
 https://www.theonion.com/rss theonion fake-news
 https://babylonbee.com/feed babylonbee fake-news
 
-# Blogs
+"-----------------"
+"---- Blogs"
+"-----------------"
 https://unixsheikh.com/feed.rss unixshekh
 https://drewdevault.com/blog/index.xml drewdevault
 http://feeds.feedburner.com/LinuxHatersBlog/?format=xml linux-hatred-deserverd-joke-i-love-linux
+https://k1sslinux.org/blog/blog.xml KISS-Linux
 
-# Comics
-https://xkcd.com/rss.xml webcomic
-
-# Podcasts
+"-----------------"
+"---- Podcasts"
+"-----------------"
 https://anchor.fm/s/149fd51c/podcast/rss TechOverTea
 https://www.youtube.com/feeds/videos.xml?channel_id=UCLwNTXWEjVd2qIHLcXxQWxA timcast right-center commentary
-https://www.youtube.com/feeds/videos.xml?channel_id=UCIveFvW-ARp_B_RckhweNJw lowderwithcrowder right commentary
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMMCy1le81jHY8rwcaqQrtA thedrip right-center left-center commentary finance
 
-# Luke Smith chad
-https://lukesmith.xyz/rss.xml luke-smith blog
-https://videos.lukesmith.xyz/feeds/videos.xml luke-smith videos
-https://notrelated.xyz/rss luke-smith notrelated
-https://based.cooking/rss.xml luke-smith based-cooking
-
-# Pentesting
+"-----------------"
+"---- Pentesting"
+"-----------------"
 https://www.darknet.org.uk/feed darknet
+
+"-----------------"
+"---- Luke Smith chad"
+"-----------------"
+https://lukesmith.xyz/rss.xml luke-smith blog
+https://notrelated.xyz/rss luke-smith notrelated
+https://videos.lukesmith.xyz/feeds/videos.xml luke-smith videos
+https://based.cooking/rss.xml luke-smith based-cooking

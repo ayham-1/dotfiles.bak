@@ -10,7 +10,7 @@ export XDG_BIN_HOME="$HOME/.local/bin"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="alacritty"
-export BROWSER="firefox"
+export BROWSER="surf-open"
 
 export PATH="$XDG_DATA_HOME/gem/bin:$PATH"
 export PATH="/usr/games/:$PATH"
@@ -55,9 +55,11 @@ alias wget="wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
 alias irssi="irssi --config=\"$XDG_CONFIG_HOME\"/irssi/config
 --home=\"$XDG_DATA_HOME\"/irssi"
 alias lynx="lynx -cfg=$XDG_CONFIG_HOME/lynx/lynx.cfg"
+alias monerod="monerod --data-dir \"$XDG_DATA_HOME\"/bitmonero"
 
 # Useful aliases
-alias config='/usr/bin/git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
+alias ls="ls --color=auto"
+alias config="/usr/bin/git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME"
 alias update="sudo mount /dev/sda1 /boot && sudo pacman -Syu"
 alias pman="pacman"
 alias cleanup_packages='(set -x; sudo pacman -R $(pacman -Qdtq))'
@@ -71,3 +73,4 @@ alias e="$EDITOR"
 alias v="$EDITOR"
 alias ll="ls -lhA"
 alias ..="cd .."
+

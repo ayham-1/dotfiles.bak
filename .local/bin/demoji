@@ -1,8 +1,3 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
-# Dmenu for selecting and copying an emoji.
-
-grep -v '#' "$LSHARE/emoji" \
-    | dmenu -i -l 20 -fn Symbola-16 \
-    | awk '{printf $1}' \
-    | xclip -selection clipboard
+cat ~/.local/share/demoji/emojidb | dmenu -l 10 -p "Search for your emoji:" | awk '{ print $2 }' | dmenu -l 10 -p "Pick your emoji:" | xclip -sel clip
