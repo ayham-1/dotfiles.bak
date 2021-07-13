@@ -1,0 +1,37 @@
+#!/bin/sh
+
+ScriptName=${0##*/}
+
+NormalApps='0. Normal Apps'
+DevApps='1. Deveplopment Apps'
+MenuExit='2. Do nothing'
+
+ChosenMenu=$(printf '%s\n%s\n%s' \
+    "$NormalApps" "$DevApps" "$MenuExit" \
+    | dmenu -i -l 10 -p "$ScriptName:")
+
+if [ "$ChosenMenu" = "$NormalApps" ]; then
+	alacritty -t "sys_monitor" -e "bpytop" &
+	alacritty -t "newsboat" -e "newsboat" &
+	alacritty -t "music" -e "ncmpcpp" &
+	alacritty -t "mixer" -e "pulsemixer" &
+	sleep 5s
+	wal -i ~/pix/wallpapers/wallpaper
+	notify-send "Started Normal Apps."
+fi
+
+if [ "$ChosenMenu" = "$DevApps" ]; then
+	input=$(dmenu -i -p "Working Environment ~/:")
+	Environment="$HOME/$input"
+
+	alacritty -t "code0" --working-directory $Environment &
+	alacritty -t "code1" --working-directory $Environment &
+	alacritty -t "code2" --working-directory $Environment &
+	alacritty -t "code3" --working-directory $Environment &
+	alacritty -t "code4" --working-directory $Environment &
+	alacritty -t "code5" --working-directory $Environment &
+	alacritty -t "code6" --working-directory $Environment &
+	sleep 5s
+	wal -i ~/pix/wallpapers/wallpaper
+	notify-send "Started Development Apps."
+fi

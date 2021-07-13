@@ -35,8 +35,8 @@ lua require("altffour")
 set t_Co=256
 let g:gruvbox_contrast_light="hard"
 "let g:gruvbox_termcolors=16
-set background=light
-colorscheme wal
+"set background=light
+"colorscheme wal
 "hi Pmenu ctermbg=gray
 "hi PmenuSel ctermbg=white
 "hi PmenuSbar ctermbg=black

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mpv $(xclip -o -sel clip) &
+notify-send "Started mpv."

@@ -1,1 +1,0 @@
-protocol unix,inet,inet6,netlink\nignore seccomp\nseccomp \x21chroot
