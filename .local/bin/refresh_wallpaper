@@ -3,7 +3,7 @@
 pkill -9 feh
 feh --no-fehbg --bg-fill ~/pix/wallpapers/wallpaper
 rm -r ~/.cache/wal/
-wal -i ~/pix/wallpapers/wallpaper 
+wal -n -i ~/pix/wallpapers/wallpaper 
 xrdb ~/.cache/wal/colors.Xresources
 
 cp ~/.cache/wal/dunstrc ~/.config/dunst/dunstrc

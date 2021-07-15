@@ -3,7 +3,6 @@ call plug#begin()
 Plug 'vimwiki/vimwiki'
 Plug 'mhinz/vim-startify'
 Plug 'liuchengxu/vim-which-key'
-Plug 'jiangmiao/auto-pairs'
 Plug 'brainfucksec/wal.vim'
 
 " LSP
@@ -25,6 +24,10 @@ Plug 'nvim-treesitter/playground'
 " debugging
 Plug 'puremourning/vimspector'
 
+" Airline & Themes
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 call plug#end()
 filetype plugin indent on
 
@@ -36,7 +39,7 @@ set t_Co=256
 let g:gruvbox_contrast_light="hard"
 "let g:gruvbox_termcolors=16
 "set background=light
-"colorscheme wal
+colorscheme wal
 "hi Pmenu ctermbg=gray
 "hi PmenuSel ctermbg=white
 "hi PmenuSbar ctermbg=black
@@ -69,6 +72,9 @@ set list
 "set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮,space:·
 set list
 set ttyfast
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
 
 " Leader keys
 let mapleader = " "

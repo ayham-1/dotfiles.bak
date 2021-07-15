@@ -1,6 +1,6 @@
 exec rm ~/.cache/wal/ &
-exec wal -i ~/pix/wallpapers/wallpaper &
-#exec feh --no-fehbg --bg-fill ~/pix/wallpapers/wallpaper &
+exec wal -n -i ~/pix/wallpapers/wallpaper &
+exec feh --no-fehbg --bg-fill ~/pix/wallpapers/wallpaper &
 exec xrdb ~/.cache/wal/colors.Xresources &
 exec slstatus &
 exec picom -CG --config ~/.config/picom.conf &
