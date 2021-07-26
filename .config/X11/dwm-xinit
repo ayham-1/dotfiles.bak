@@ -14,6 +14,7 @@ exec mpd &
 source ~/.config/env &
 exec xss-lock -- /usr/bin/slock &
 exec keynav &
+exec light -S 100 &
 umask 002 &
 if test -f /usr/lib/ssh/x11-ssh-askpass
 then
